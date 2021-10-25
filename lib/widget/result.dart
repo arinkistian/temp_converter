@@ -16,17 +16,17 @@ class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Container(
-          margin: const EdgeInsets.only(left: 10),
-          padding: const EdgeInsets.fromLTRB(5, 30, 5, 30),
+          // margin: const EdgeInsets.only(left: 10),
+          // padding: const EdgeInsets.fromLTRB(5, 30, 5, 30),
           // decoration: BoxDecoration(border: Border.all(color: Colors.orange)),
           child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     "Suhu dalam Kelvin",
@@ -39,7 +39,7 @@ class Result extends StatelessWidget {
                 ],
               ),
               Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text(
                     "Suhu dalam Reamur",
@@ -55,7 +55,6 @@ class Result extends StatelessWidget {
           ),
         )
       ],
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
     );
   }
 }
